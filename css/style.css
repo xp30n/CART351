@@ -30,14 +30,25 @@ p {
 }
 
 .journal1 {
-  position: block;
-  width: min(35vw, 450px);
-  max-width: 450px;
+  position: relative;
+  display: block;
+
+  width: min(55vw, 550px);
+  max-width: 650px;
   height: auto;
-  margin: 0 auto;
+  margin: -30% auto 0;
 
   z-index: 1;
-  animation: bob 3s ease-in-out infinite;
+  animation: bob 2s ease-in-out infinite;
+}
+
+@media (max-width: 600px) {
+  .journal1 {
+    position: relative;
+    top: -20vh;
+    width: 85vw;
+    margin: -15px auto 0;
+  }
 }
 
 @keyframes bob {
@@ -47,7 +58,7 @@ p {
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 
