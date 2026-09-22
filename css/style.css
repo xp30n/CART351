@@ -16,13 +16,42 @@ body {
   align-items: center;
 }
 
+.landing-container {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
 p {
-  position: relative;
+  position: fixed;
+  top: 5%;
   z-index: 1;
   color: white;
 }
 
-.ps3-bg {
+.journal1 {
+  position: block;
+  width: min(35vw, 450px);
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+
+  z-index: 1;
+  animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bubbles-bg {
   position: fixed;
   top: 0;
   left: 0;
