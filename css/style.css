@@ -9,11 +9,6 @@ body {
   min-height: 100vh;
   font-family: "JetBrains", sans-serif;
   background-color: black;
-  overflow: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .landing-container {
@@ -22,24 +17,35 @@ body {
   text-align: center;
 }
 
-p {
-  position: fixed;
-  top: 5%;
-  z-index: 1;
-  color: white;
+.title {
+  display: flex;
+  width: min(45vw, 450px);
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+
+  justify-content: center;
+  align-items: center;
+  animation: bob 2s ease-in-out infinite;
 }
 
 .journal1 {
-  position: relative;
-  display: block;
+  color: white;
+}
 
-  width: min(55vw, 550px);
-  max-width: 650px;
-  height: auto;
-  margin: -30% auto 0;
+.bubbles-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
 
-  z-index: 1;
-  animation: bob 2s ease-in-out infinite;
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+
+  z-index: -1;
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {
@@ -56,23 +62,7 @@ p {
   100% {
     transform: translateY(0);
   }
-
   50% {
-    transform: translateY(-15px);
+    transform: translateY(25px);
   }
-}
-
-.bubbles-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-
-  width: 100vw;
-  height: 100vh;
-
-  object-fit: cover;
-
-  z-index: -1;
-  overflow: hidden;
 }
