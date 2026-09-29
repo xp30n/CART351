@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 100%;
   font-family: "JetBrains", sans-serif;
   background-color: black;
 }
@@ -17,15 +17,12 @@ body {
   text-align: center;
 }
 
-.title {
-  display: flex;
+.title-card {
+  display: block;
   width: min(45vw, 450px);
   max-width: 450px;
   height: auto;
   margin: 0 auto;
-
-  justify-content: center;
-  align-items: center;
   animation: bob 2s ease-in-out infinite;
 }
 
@@ -48,11 +45,12 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .journal1 {
+@media (max-width: 700px) {
+  .title-card {
     position: relative;
-    top: -20vh;
-    width: 85vw;
+    top: 0vh;
+    width: 95vw;
+    max-width: none;
     margin: -15px auto 0;
   }
 }
