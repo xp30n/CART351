@@ -58,3 +58,41 @@ print(class_professors[cart_class])
 # it's basically telling python to find whatever is labeled Cart_214 
 # and give me the value attached to it
 
+# You can get a list of keys in a dictionary using the .keys() method
+print(class_professors.keys())
+
+# and you can go through the lit to print out each value using a for loop
+for key in class_professors.keys():
+    print(class_professors[key])
+
+# There is also a function to go through all the values using the values() method
+print(class_professors.values())
+# use a for loop to iterate:
+for value in class_professors.values():
+    print(value)
+
+# And - if you want a list of all key/value pairs you can use the items() method:
+print(class_professors.items())
+#again you can use a for loop - but note that the output is a **tuple**
+for key_val in class_professors.items():
+    print (key_val)
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# ::            OTHER OPERATOES IN DICTIONARIES            ::
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# The 'in' operator will check if a particular key exists in a dictionary
+print('Cart_253_A' in class_professors )
+#True
+print('Cart_253' in class_professors )
+#False
+
+# A dictionary can also go in a for loop. 
+# If you write a for loop like this, the loop will iterate over each key in the dictionary
+for item in class_professors:
+    print(item)
+
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# ::   DICTIONARIES CAN CONTAIN LISTS AND OTHER DICTIONARIES    ::
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
