@@ -34,6 +34,24 @@ body {
   text-align: center;
   margin: 0;
 }
+.entry1 {
+  color: white;
+  text-align: justify;
+}
+
+.journal2 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+}
+
+.entry2 {
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+}
 
 .bubbles-bg {
   position: fixed;
