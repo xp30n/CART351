@@ -44,7 +44,8 @@ body {
   color: white;
   align-items: center;
   text-align: center;
-  margin: 50px;
+  margin: 30px 10px auto;
+  /* margin-top: 30px; */
 }
 
 .entry2 {
