@@ -8,22 +8,24 @@ body {
   padding: 0;
   min-height: 100%;
   font-family: "JetBrains", sans-serif;
-  background-color: black;
 }
 
-.landing-container {
-  width: 90%;
-  max-width: 700px;
-  margin: 1.5vh auto 10vh;
+.text-container {
+  width: 100%;
+  max-width: 800px;
+  margin: -4vh auto 5vh;
   text-align: center;
+  background-color: rgba(59, 163, 249, 0.613);
+  padding: 15px;
+  border-radius: 20px;
 }
 
 .title-card {
   display: block;
-  width: min(45vw, 450px);
-  max-width: 450px;
+  width: min(45vw, 650px);
+  max-width: 650px;
   height: auto;
-  margin: 0 auto;
+  margin: 6vh auto;
   animation: bob 2s ease-in-out infinite;
 }
 
@@ -85,6 +87,6 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(25px);
+    transform: translateY(-25px);
   }
 }
