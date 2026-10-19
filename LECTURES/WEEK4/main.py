@@ -20,6 +20,8 @@ def user_profile(name):
 #     # we will use templates sooN
 #     return f"<h2> the 100th letter of {dynamicVar} is {dynamicVar[99]}</h2>"
 
+# dynamicVar[99] attempts to retrieve the character at index 99 - the 100th character, because indexing starts at zero. 
+
 
 @app.route("/catlatin/<word>")
 def cat_latin(word):
