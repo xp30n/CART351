@@ -1,6 +1,6 @@
 @font-face {
   font-family: "JetBrains";
-  src: url("/assets/fonts/JetBrains.ttf") format("truetype");
+  src: url("./assets/fonts/JetBrains.ttf") format("truetype");
 }
 
 body {
@@ -30,6 +30,7 @@ body {
 }
 
 .journal1 {
+  font-family: 'JetBrains';
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
   align-items: center;
@@ -43,6 +44,7 @@ body {
 }
 
 .journal2 {
+  font-family: 'JetBrains';
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
   align-items: center;
@@ -51,11 +53,13 @@ body {
 }
 
 .entry2 {
+  font-family: 'JetBrains';
   color: white;
   text-align: justify;
 }
 
 .journal3 {
+  font-family: 'JetBrains';
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
   align-items: center;
@@ -64,6 +68,7 @@ body {
 }
 
 .entry3 {
+  font-family: 'JetBrains';
   color: white;
   text-align: justify;
 }
