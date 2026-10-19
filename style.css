@@ -1,6 +1,6 @@
 @font-face {
   font-family: "JetBrains";
-  src: url("../assets/fonts/JetBrains.ttf") format("truetype");
+  src: url("/assets/fonts/JetBrains.ttf") format("truetype");
 }
 
 body {
@@ -37,6 +37,7 @@ body {
   margin: 0;
 }
 .entry1 {
+  font: "JetBrains";
   color: white;
   text-align: justify;
 }
