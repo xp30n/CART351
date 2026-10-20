@@ -25,8 +25,8 @@ def user_profile(name):
 
 @app.route("/catlatin/<word>")
 def cat_latin(word):
-    if(word[-1].lower() != "y"):
+    if(word[-1].lower() != "y"): #lower converts it to lowercase, word[-1] gets the last character of the string
         return f"{word}y"
-    return f"{word[:-1]}iful"
+    return f"{word[:-1]}iful" #word[:-1] takes the string from the beginning up to but not including the last character
     
 app.run()
