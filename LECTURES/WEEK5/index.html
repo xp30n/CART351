@@ -1,0 +1,10 @@
+{% extends "base.html" %} <!--This is basically saying that we're adding onto base.html. When you change content on base.html, it also ends up in index.html.-->
+
+{% block content %}
+    <h1>Hi, We are using inheritance :)!</h1>
+    <section class = "flex-intro">
+   <p> A BD </p>
+    </section>
+{% endblock %}
+
+<!-- Base is basically the template that is used by everyone. index.html is a copy of it. The above code is basically the info that "block content" will contain-->
