@@ -29,7 +29,10 @@ body {
   animation: bob 2s ease-in-out infinite;
 }
 
-.journal1 {
+.journal1,
+.journal2,
+.journal3,
+.journal4 {
   font-family: "JetBrains";
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
@@ -37,53 +40,11 @@ body {
   text-align: center;
   margin: 0;
 }
-.entry1 {
-  font: "JetBrains";
-  color: white;
-  text-align: justify;
-}
-
-.journal2 {
-  font-family: "JetBrains";
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: white;
-  align-items: center;
-  text-align: center;
-  margin: 30px 10px auto;
-}
-
-.entry2 {
-  font-family: "JetBrains";
-  color: white;
-  text-align: justify;
-}
-
-.journal3 {
-  font-family: "JetBrains";
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: white;
-  align-items: center;
-  text-align: center;
-  margin: 30px 10px auto;
-}
-
-.entry3 {
-  font-family: "JetBrains";
-  color: white;
-  text-align: justify;
-}
-
-.journal4 {
-  font-family: "JetBrains";
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: white;
-  align-items: center;
-  text-align: center;
-  margin: 30px 10px auto;
-}
-
+.entry1,
+.entry2,
+.entry3,
 .entry4 {
-  font-family: "JetBrains";
+  font: "JetBrains";
   color: white;
   text-align: justify;
 }
@@ -104,12 +65,62 @@ body {
 }
 
 @media (max-width: 700px) {
+  * {
+    box-sizing: border-box;
+  }
   .title-card {
+    display: block;
     position: relative;
-    top: 0vh;
-    width: 95vw;
-    max-width: none;
-    margin: -15px auto 0;
+    top: 0;
+    width: 95%;
+    max-width: 100%;
+    height: auto;
+    margin: 45px auto 0;
+    z-index: 2;
+  }
+
+  .text-container {
+    position: relative;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 12px 30px;
+    overflow-wrap: break-word;
+  }
+
+  .journal1,
+  .journal2,
+  .journal3,
+  .journal4 {
+    font-family: "JetBrains", monospace;
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    color: white;
+    text-align: center;
+    margin: 25px 0 15px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .entry1,
+  .entry2,
+  .entry3,
+  .entry4 {
+    font-family: "JetBrains", monospace;
+    font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+    color: white;
+    text-align: left;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+
+  .bubbles-bg {
+    overflow: hidden;
   }
 }
 
