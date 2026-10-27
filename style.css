@@ -30,7 +30,7 @@ body {
 }
 
 .journal1 {
-  font-family: 'JetBrains';
+  font-family: "JetBrains";
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
   align-items: center;
@@ -44,7 +44,7 @@ body {
 }
 
 .journal2 {
-  font-family: 'JetBrains';
+  font-family: "JetBrains";
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
   align-items: center;
@@ -53,13 +53,13 @@ body {
 }
 
 .entry2 {
-  font-family: 'JetBrains';
+  font-family: "JetBrains";
   color: white;
   text-align: justify;
 }
 
 .journal3 {
-  font-family: 'JetBrains';
+  font-family: "JetBrains";
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
   align-items: center;
@@ -68,7 +68,22 @@ body {
 }
 
 .entry3 {
-  font-family: 'JetBrains';
+  font-family: "JetBrains";
+  color: white;
+  text-align: justify;
+}
+
+.journal4 {
+  font-family: "JetBrains";
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin: 30px 10px auto;
+}
+
+.entry4 {
+  font-family: "JetBrains";
   color: white;
   text-align: justify;
 }
