@@ -32,7 +32,8 @@ body {
 .journal1,
 .journal2,
 .journal3,
-.journal4 {
+.journal4,
+.journal5 {
   font-family: "JetBrains";
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: white;
@@ -43,7 +44,8 @@ body {
 .entry1,
 .entry2,
 .entry3,
-.entry4 {
+.entry4,
+.entry5 {
   font: "JetBrains";
   color: white;
   text-align: justify;
