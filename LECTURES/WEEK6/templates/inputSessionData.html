@@ -18,4 +18,9 @@
     </p>
   </form>
 </div>
-{% endblock %}
+
+{% if session['data_a'] %}
+<h3>LOAD SESSION VARS</h3>
+<p>Data A: {{session['data_a']}}</p>
+<p>Data B: {{session['data_b']}}</p>
+{% endif %} {% endblock %}

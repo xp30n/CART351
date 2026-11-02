@@ -73,4 +73,32 @@ app.secret_key = 'BAD_SECRET_KEY'
 def inputSessionData():
     return render_template("inputSessionData.html")
 
+@app.route("/saveSession")
+def saveSession():
+    app.logger.info(request.args['data_a'])
+    # reload - use url_for() here :)
+    # but note that the data will be gone
+    # so add in a session variable
+
+    session['data_a'] = request.args['data_a']
+    session['data_b'] = request.args['data_b']
+
+    return redirect(url_for('inputSessionData'))
+
+#modify session route
+@app.route('/modifySessionData')
+def modifySessionData():
+    return render_template("modifySessionData.html")
+
+@app.route('/modifySession')
+def modifySession():
+    app.logger.info(request.args['data_a'])
+    #reload  - use url_for here :) - the function...
+    #but note that the data will be gone
+    # so add in a session variable
+
+    session['data_a'] = request.args['data_a']
+    session['data_b'] = request.args['data_b']
+    return redirect(url_for('modifySessionData'))
+
 app.run(debug=True)
