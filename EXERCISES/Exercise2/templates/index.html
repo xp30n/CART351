@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/base.css') }}"
+    />
+    <title>EXERCISE 2</title>
+  </head>
+
+  <body>
+    <h1>NASA Images</h1>
+    <p>Explore the universe!</p>
+
+    <form method="GET" action="{{ url_for('index') }}">
+      <input
+        type="text"
+        name="q"
+        placeholder="Search NASA images..."
+        value="{{ query }}"
+      />
+
+      <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+
+    <div class="result">
+      <h3>{{ results[0]["data"][0]["title"] }}</h3>
+
+      <img
+        src="{{ results[0]['links'][0]['href'] }}"
+        alt="NASA image"
+        width="300"
+      />
+
+      <p>{{ results[0]["data"][0]["description"] }}</p>
+    </div>
+
+    {% else %}
+
+    <p>No results found!</p>
+
+    {% endif %}
+  </body>
+</html>
